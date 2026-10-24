@@ -15,7 +15,7 @@ asset = next(a for a in rel["assets"] if a["name"] == ASSET)
 src = json.loads(path.read_text(encoding="utf-8"))
 app = src["apps"][0]
 version = {
-    "version": rel["tag_name"].lstrip("v"),
+    "version": re.match(r"v?(\d+\.\d+\.\d+)", rel["tag_name"]).group(1),  # must equal the IPA's CFBundleShortVersionString
     "buildVersion": re.search(r"(\d+)$", rel["tag_name"]).group(1),  # must equal the IPA's CFBundleVersion
     "date": rel["published_at"],
     "localizedDescription": f"PiliPlus {rel['tag_name']}",
@@ -23,7 +23,7 @@ version = {
     "size": asset["size"],
     "minOSVersion": "14.0",
 }
-app["versions"] = [version] + [v for v in app["versions"] if v["version"] != version["version"]][:9]
+app["versions"] = [version] + [v for v in app["versions"] if v["buildVersion"] != version["buildVersion"]][:9]
 # legacy fields read by older AltStore/SideStore builds
 app.update(version=version["version"], versionDate=version["date"], downloadURL=version["downloadURL"],
            size=version["size"], versionDescription=version["localizedDescription"])
