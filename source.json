@@ -1,0 +1,44 @@
+{
+  "name": "PiliPlus Source",
+  "subtitle": "PiliPlus 海外加速版（lemonteaau 分支）",
+  "description": "PiliPlus 海外加速版：内置 B站线程撕裂者（BTR）多线程下载，每日同步上游。适用于 SideStore / LiveContainer。",
+  "iconURL": "https://raw.githubusercontent.com/lemonteaau/PiliPlus/main/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+  "website": "https://github.com/lemonteaau/PiliPlus",
+  "tintColor": "#FB7299",
+  "apps": [
+    {
+      "name": "PiliPlus",
+      "bundleIdentifier": "com.lemontea.piliplus",
+      "developerName": "lemonteaau",
+      "subtitle": "第三方 B 站客户端（海外加速）",
+      "localizedDescription": "PiliPlus 海外加速版：内置 B站线程撕裂者（BTR）多线程下载，解决海外看 B 站卡顿、加载慢。\n源代码：https://github.com/lemonteaau/PiliPlus（GPL-3.0）",
+      "iconURL": "https://raw.githubusercontent.com/lemonteaau/PiliPlus/main/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "tintColor": "#FB7299",
+      "category": "entertainment",
+      "screenshotURLs": [],
+      "versions": [
+        {
+          "version": "2.1.6.2-fork.5711",
+          "buildVersion": "422371083",
+          "date": "2026-10-23T22:41:54Z",
+          "localizedDescription": "PiliPlus v2.1.6.2-fork.5711",
+          "downloadURL": "https://github.com/lemonteaau/PiliPlus/releases/download/v2.1.6.2-fork.5711/PiliPlus-custom-ios-unsigned.ipa",
+          "size": 24665888,
+          "minOSVersion": "14.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSPhotoLibraryUsageDescription": "请允许APP保存图片到相册"
+        }
+      },
+      "version": "2.1.6.2-fork.5711",
+      "versionDate": "2026-10-23T22:41:54Z",
+      "downloadURL": "https://github.com/lemonteaau/PiliPlus/releases/download/v2.1.6.2-fork.5711/PiliPlus-custom-ios-unsigned.ipa",
+      "size": 24665888,
+      "versionDescription": "PiliPlus v2.1.6.2-fork.5711"
+    }
+  ],
+  "news": []
+}
