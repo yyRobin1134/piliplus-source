@@ -1,5 +1,5 @@
 """Refresh source.json from the newest lemonteaau/PiliPlus iOS release."""
-import json, os, urllib.request, pathlib
+import json, os, re, urllib.request, pathlib
 
 REPO = "lemonteaau/PiliPlus"
 ASSET = "PiliPlus-custom-ios-unsigned.ipa"
@@ -16,7 +16,7 @@ src = json.loads(path.read_text(encoding="utf-8"))
 app = src["apps"][0]
 version = {
     "version": rel["tag_name"].lstrip("v"),
-    "buildVersion": str(rel["id"]),
+    "buildVersion": re.search(r"(\d+)$", rel["tag_name"]).group(1),  # must equal the IPA's CFBundleVersion
     "date": rel["published_at"],
     "localizedDescription": f"PiliPlus {rel['tag_name']}",
     "downloadURL": asset["browser_download_url"],
