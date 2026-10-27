@@ -2,7 +2,7 @@ name: Update source
 
 on:
   schedule:
-    - cron: "30 23 * * *"
+    - cron: "23 * * * *"
   workflow_dispatch:
 
 permissions:
