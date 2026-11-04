@@ -19,6 +19,15 @@
       "versions": [
         {
           "version": "2.2.0",
+          "buildVersion": "5794",
+          "date": "2026-11-03T23:38:31Z",
+          "localizedDescription": "PiliPlus v2.2.0.2-fork.5794",
+          "downloadURL": "https://github.com/lemonteaau/PiliPlus/releases/download/v2.2.0.2-fork.5794/PiliPlus-custom-ios-unsigned.ipa",
+          "size": 25009424,
+          "minOSVersion": "14.0"
+        },
+        {
+          "version": "2.2.0",
           "buildVersion": "5785",
           "date": "2026-11-03T01:13:10Z",
           "localizedDescription": "PiliPlus v2.2.0.1-fork.5785",
@@ -97,15 +106,6 @@
           "downloadURL": "https://github.com/lemonteaau/PiliPlus/releases/download/v2.1.6.2-fork.5732/PiliPlus-custom-ios-unsigned.ipa",
           "size": 24712480,
           "minOSVersion": "14.0"
-        },
-        {
-          "version": "2.1.6",
-          "buildVersion": "5718",
-          "date": "2026-10-24T21:03:11Z",
-          "localizedDescription": "PiliPlus v2.1.6.2-fork.5718",
-          "downloadURL": "https://github.com/lemonteaau/PiliPlus/releases/download/v2.1.6.2-fork.5718/PiliPlus-custom-ios-unsigned.ipa",
-          "size": 24663535,
-          "minOSVersion": "14.0"
         }
       ],
       "appPermissions": {
@@ -115,10 +115,10 @@
         }
       },
       "version": "2.2.0",
-      "versionDate": "2026-11-03T01:13:10Z",
-      "downloadURL": "https://github.com/lemonteaau/PiliPlus/releases/download/v2.2.0.1-fork.5785/PiliPlus-custom-ios-unsigned.ipa",
-      "size": 24994499,
-      "versionDescription": "PiliPlus v2.2.0.1-fork.5785"
+      "versionDate": "2026-11-03T23:38:31Z",
+      "downloadURL": "https://github.com/lemonteaau/PiliPlus/releases/download/v2.2.0.2-fork.5794/PiliPlus-custom-ios-unsigned.ipa",
+      "size": 25009424,
+      "versionDescription": "PiliPlus v2.2.0.2-fork.5794"
     }
   ],
   "news": []
